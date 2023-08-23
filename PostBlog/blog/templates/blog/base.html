@@ -29,11 +29,8 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <!-- <a class="nav-item nav-link" href="#">Login</a>
-              <a class="nav-item nav-link" href="#">Register</a> -->
-              <!-- <button class="noselect">Create Post</button> -->
-<!--                <h3 style="color: white;">Hello {{request.user}}</h3>-->
-                <a href="">
+                <h3 style="color: white;">Hey {{request.user}}</h3>
+                <a href="{% url 'blog-new' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -69,13 +66,6 @@
                 <span></span>
                 Register
             </a>
-            <!-- <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Neon button
-            </a> -->
                 {% endif %}
             </div>
           </div>
@@ -98,7 +88,7 @@
         </div>
         <div class="col-md-4">
           <div class="content-sectionw">
-            <!-- <h3>Our Sidebar</h3>
+             <h3>Our Sidebar</h3>
             <p class='text-muted'>You can put any information here you'd like.
               <ul class="list-group">
                 <li class="list-group-item list-group-item-light">Latest Posts</li>
@@ -106,7 +96,7 @@
                 <li class="list-group-item list-group-item-light">Calendars</li>
                 <li class="list-group-item list-group-item-light">etc</li>
               </ul>
-            </p> -->
+            </p>
             <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;" style="padding-top: 120px;">
                 <a id="list-group" style="text-decoration: none;" href="" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
                   <!-- <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg> -->
